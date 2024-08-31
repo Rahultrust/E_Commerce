@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select onclick="select_Click(this)"  onchange="select_change(this)" name="" id="">
+        <option value="----Select----">sfdgdjg</option>
+        <option value="Smartphones">Smartphones</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Home Appliance">Home Appliance</option>
+        
+    </select>
+    <script>
+        function select_Click(e){
+            //alert(e.value);
+        }
+function select_change(e){
+    // alert(e.value);
+    console.log(e.options[e.selectedIndex].text);
+    console.log(e.options[e.selectedIndex].value);
+   
+}
+
+    </script>
+</body>
+</html>
