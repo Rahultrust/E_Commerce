@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Contact() {
   return (
@@ -6,14 +7,14 @@ function Contact() {
       {/*Contact heading*/}
       <div className='row'>
         <div className='col-sm-12 text-center mb-4'>
-          <a
+          <NavLink
             className='btn btn-primary'
             target='_blank'
-            href='https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f8876459b9ac2&mfid=1619175810225_f8876459b9ac2#/checkout/openButton'
+            to='https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f8876459b9ac2&mfid=1619175810225_f8876459b9ac2#/checkout/openButton'
           >
             {" "}
             Donate Now <i className='fa fa-dollar' />
-          </a>
+          </NavLink>
         </div>
         {/*Grid column*/}
         <div className='col-sm-12 mb-4 col-md-5'>
@@ -104,21 +105,21 @@ function Contact() {
           {/*Buttons*/}
           <div className='row text-center'>
             <div className='col-md-4'>
-              <a className='bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block'>
+              <NavLink className='bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block'>
                 <i className='fa fa-map-marker' />
-              </a>
+              </NavLink>
               <p> Your Address ….. </p>
             </div>
             <div className='col-md-4'>
-              <a className='bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block'>
+              <NavLink className='bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block'>
                 <i className='fa fa-phone' />
-              </a>
+              </NavLink>
               <p>+91- 8969580199</p>
             </div>
             <div className='col-md-4'>
-              <a className='bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block'>
+              <NavLink className='bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block'>
                 <i className='fa fa-envelope' />
-              </a>
+              </NavLink>
               <p> rahul.kumar525757@gmail.com</p>
             </div>
           </div>
